@@ -5,6 +5,7 @@ import { CalculatorCard } from '@/components/calculator/calculator-card'
 import { NumberInput } from '@/components/calculator/number-input'
 import { ResultDisplay } from '@/components/calculator/result-display'
 import { Disclaimer } from '@/components/calculator/disclaimer'
+import { InfoSection } from '@/components/calculator/info-section'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
@@ -205,6 +206,7 @@ export default function RentConvertPage() {
       )}
 
       <ResultDisplay sections={sections} />
+      <InfoSection slug="rent-convert" />
       <Disclaimer />
     </div>
   )

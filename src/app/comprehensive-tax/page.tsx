@@ -5,6 +5,7 @@ import { CalculatorCard } from '@/components/calculator/calculator-card'
 import { NumberInput } from '@/components/calculator/number-input'
 import { ResultDisplay } from '@/components/calculator/result-display'
 import { Disclaimer } from '@/components/calculator/disclaimer'
+import { InfoSection } from '@/components/calculator/info-section'
 import { Button } from '@/components/ui/button'
 import { calculateComprehensiveTax } from '@/lib/calculators/comprehensive-tax'
 import { formatKRW, formatManWon, formatPercent } from '@/lib/utils/format'
@@ -201,6 +202,7 @@ export default function ComprehensiveTaxPage() {
       )}
 
       <ResultDisplay sections={sections} />
+      <InfoSection slug="comprehensive-tax" />
       <Disclaimer />
     </div>
   )

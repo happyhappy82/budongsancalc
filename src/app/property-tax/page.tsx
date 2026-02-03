@@ -5,6 +5,7 @@ import { CalculatorCard } from '@/components/calculator/calculator-card'
 import { NumberInput } from '@/components/calculator/number-input'
 import { ResultDisplay } from '@/components/calculator/result-display'
 import { Disclaimer } from '@/components/calculator/disclaimer'
+import { InfoSection } from '@/components/calculator/info-section'
 import { Button } from '@/components/ui/button'
 import { calculatePropertyTax } from '@/lib/calculators/property-tax'
 import { formatKRW, formatManWon, formatPercent } from '@/lib/utils/format'
@@ -119,6 +120,7 @@ export default function PropertyTaxPage() {
       )}
 
       <ResultDisplay sections={sections} />
+      <InfoSection slug="property-tax" />
       <Disclaimer />
     </div>
   )
