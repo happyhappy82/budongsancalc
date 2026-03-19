@@ -98,6 +98,12 @@ export const NAV_CATEGORIES: readonly NavCategory[] = [
       { label: '상속지분', href: '/inheritance-share' },
     ],
   },
+  {
+    label: '시세조회',
+    items: [
+      { label: '서울 아파트 호가', href: '/apartment-prices' },
+    ],
+  },
 ] as const
 
 // Flat list for backward compatibility

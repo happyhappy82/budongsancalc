@@ -45,6 +45,7 @@ import {
   Hammer,
   ScrollText,
   Briefcase,
+  Search,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
@@ -557,6 +558,21 @@ const CATEGORIES: readonly CalcCategory[] = [
         iconBg: 'bg-slate-100',
         iconColor: 'text-slate-600',
         accentDot: 'bg-slate-400',
+      },
+    ],
+  },
+  {
+    label: '시세조회',
+    items: [
+      {
+        title: '서울 아파트 호가 조회',
+        description: '네이버 부동산에 등록된 서울 아파트 매물 호가를 실시간으로 조회합니다.',
+        href: '/apartment-prices',
+        features: ['서울 25개 구', '매매·전세·월세', '실시간 호가 정보'],
+        icon: Search,
+        iconBg: 'bg-blue-100',
+        iconColor: 'text-blue-600',
+        accentDot: 'bg-blue-400',
       },
     ],
   },
